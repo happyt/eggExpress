@@ -1,0 +1,41 @@
+doctype html
+html(lang="em")
+   head
+      title= "User profile"
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+      script(src='/scripts/app.js')
+
+   style
+      include style.css
+   body
+      div#nav
+         a(href='/') Back to Users
+
+      h3= username
+      div
+         img(src='/images/' + username + '.jpg')
+         dl
+            dt First
+            dd.edit
+               input(type='text', id='firstname', value=user.name.first)
+            dd.view= user.name.first
+            br
+            dt Surname
+            dd.edit
+               input(type='text', id='lastname', value=user.name.last)
+            dd.view= user.name.last
+            br
+            dt Location
+            dd.edit
+               input(type='text', id='city', value=user.location.city)
+            dd.view= user.location.city
+            br
+            dt
+            dd.edit
+               input(type='submit', value='Save', onclick='save("' + username + '")')
+               input(type='submit', value='Cancel', onclick='cancel()')
+         div
+            input(type='submit', value='Edit', onclick='edit()')
+            input(type='submit', value='Delete', onclick='del("' + username + '")')
+
+

@@ -1,0 +1,5 @@
+[{"name":{"first":"adam", "last":"andrew"}, "username":"ianm", "city": "London"},
+  {"name":{"first":"bright", "last":"andable"}, "username":"able", "city": "London"},
+  {"name":{"first":"echo", "last":"baker"}, "username":"baker", "city": "London"},
+  {"name":{"first":"charles", "last":"dance"}, "username":"charlie", "city": "London"}
+]

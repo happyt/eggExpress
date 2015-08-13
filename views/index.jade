@@ -1,0 +1,13 @@
+doctype html
+html(lang="em")
+   head
+      title= "User index"
+   style
+      include style.css
+   body
+      h1 Jade
+      ul
+         each user in users
+            div
+               img(src='/images/' + user.username + '.jpg')
+               a(href='/' + user.username)= user.name.full
